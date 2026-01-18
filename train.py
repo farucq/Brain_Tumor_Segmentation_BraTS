@@ -24,7 +24,7 @@ optimizer = optim.Adam(model.parameters(), lr=1e-4)
 
 best_dice = 0
 
-for epoch in range(10):
+for epoch in range(15):
     model.train()
 
     img, mask = load_sample(os.path.join(BASE_DIR, train_cases[0]))
